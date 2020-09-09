@@ -11,7 +11,7 @@
  * Refer with std::string, etc.
  */
 
-// Implements information cohesion
+// Implements informational cohesion
 struct Student {
   // Member variables AKA attributes (data part of cohesion)
   int id;
