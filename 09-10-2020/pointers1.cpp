@@ -1,13 +1,16 @@
 #include <cstdio>
 
+// Pass by value
 void inc1(double v) {
   v++;
 }
 
+// Pass by reference, not preferable
 void inc2(double &v) {
   v++;
 }
 
+// Pass pointer, best
 void inc3(double *vp) {
   (*vp)++;
 }
@@ -21,6 +24,16 @@ int main() {
   printf("#1: e = %lf\n", e);  // 2
   inc3(&e);
   printf("#1: e = %lf\n", e);  // 3
+
+  // By reference
+  double &eref = e;
+  eref = 100;
+  printf("#1: e = %lf\n", e);  // 100
+
+  // By pointer
+  double *ep = &e;
+  *ep = 200;
+  printf("#1: e = %lf\n", e);  // 200 
 
   double pi = 3.1415926;
   printf("%lf\n", pi);

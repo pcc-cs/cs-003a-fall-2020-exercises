@@ -2,7 +2,7 @@
 #include <cstdio>
 
 class Point {
-  // Only visible to class (encapsulation)
+ // Only visible to class (encapsulation)
  private:
   // Attributes; you're free to change private variables at will
   double _x;
@@ -14,7 +14,7 @@ class Point {
     return v;
   }
 
-  // Methods; public methods are promises to outsiders
+ // Methods; public methods are promises to outsiders
  public:
   // Constructor: notice no return type and name (same as of class)
   Point(double x, double y) {
