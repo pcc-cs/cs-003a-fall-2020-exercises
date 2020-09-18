@@ -24,7 +24,7 @@ class Color {
   /**
    * Single parameter constructor, for initialization
    * with a single double value (for monochromatic).
-   * Don't use this!
+   * No explicit keyword, so don't use this!
    */
   Color(double rgb) : _r(rgb), _g(rgb), _b(rgb) {
   }
