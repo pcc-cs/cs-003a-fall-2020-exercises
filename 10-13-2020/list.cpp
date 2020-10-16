@@ -4,11 +4,11 @@ Node::Node(int e) : value(e) {
 }
 
 void List::append(int e) {
-  Node *n = new Node(e);
+  Node *np = new Node(e);
   if (_tail == nullptr) {
-    _head = _tail = n;
+    _head = _tail = np;
   } else {
-    _tail->next = n;
+    _tail->next = np;
     _tail = _tail->next;
   }
 }
