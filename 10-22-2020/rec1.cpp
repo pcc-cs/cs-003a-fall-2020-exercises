@@ -10,7 +10,7 @@ namespace {
   unsigned long long *cache;
 }
 void initFib2(unsigned int n) {
-  cache = new unsigned long long[n + 1];
+  cache = new unsigned long long[n + 1]();
   cache[0] = cache[1] = 1;
 }
 unsigned long long fib2(unsigned int n) {
