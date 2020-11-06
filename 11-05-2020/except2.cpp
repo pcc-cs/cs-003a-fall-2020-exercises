@@ -1,7 +1,7 @@
 #include <cstdio>
 #include <climits>
 
-#define MAX_VALUE INT_MAX / 2
+#define MAX_VALUE (INT_MAX / 2)
 enum class AddError {
   NEGATIVE, BIG
 };
