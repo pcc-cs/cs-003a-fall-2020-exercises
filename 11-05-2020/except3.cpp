@@ -20,6 +20,7 @@ double div(int a, int b) {
     // Throwing the derived class instance
     throw DivByZero();
   }
+  // Note the double(a), without that it would be an integer division
   return double(a) / b;
 }
 
@@ -31,7 +32,7 @@ int main() {
   try {
     printf("%d / %d = %.1lf\n", a, b, div(a, b));
   } catch (Default &d) {
-    // Exception is class as base class even though derived class is thrown
+    // Exception is caught as base class even though derived class is thrown
     fprintf(stderr, "Error: %s\n", d.message());
   }
 }
